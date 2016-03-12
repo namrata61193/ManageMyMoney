@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#000" android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip"
+        android:textSize="22sp"
+        android:textStyle="bold" android:visibility = "gone" android:id="@+id/txt_expenseId"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:textColor="#000" android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="4dip"
+        android:textSize="25sp"
+        android:textStyle="bold" android:id="@+id/txt_expenseAmount"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#000" android:paddingLeft="8dip"
+        android:paddingBottom="6dip"
+        android:textSize="15sp"
+        android:layout_below="@id/txt_expenseAmount" android:id="@+id/txt_expenseDescription"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#000" android:layout_alignParentRight="true"
+        android:padding="8dip" android:textSize="15sp" android:id="@+id/txt_expenseDate"/>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#000"  android:visibility = "gone" android:id="@+id/txt_expenseRecurring"/>
+    
+    
+
+</RelativeLayout>

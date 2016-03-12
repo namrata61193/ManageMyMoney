@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateBillActivity" >
+    
+     <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:gravity="center" >
+        
+     <TextView
+         android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/createanewbill"
+        	android:textSize="20sp"
+        	android:textStyle="bold"
+        	android:text = "@string/addANewBill"/>
+
+     <ImageButton
+         android:id="@+id/buttonCreateNewBill"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:contentDescription="@string/createBill"
+         android:src="@drawable/createbill" />
+    
+     </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/editTextAmountBill"
+        android:hint = "Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+ 
+        <requestFocus />
+    </EditText>
+    
+     <Spinner
+        android:id="@+id/SpinnerDescriptionBill"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:hint="Category"
+        android:prompt="@string/category" />
+ 
+  
+    <TextView
+        android:id="@+id/editTextDateBill"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:visibility = "gone"/>
+    
+    <Button
+        android:id="@+id/btnChangeDateBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Date" />
+    
+    <DatePicker
+        android:id="@+id/dpResultBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+     <CheckBox
+        android:id="@+id/checkBoxRecurring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recurring" />
+   
+ 
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateExpenseActivity" >
+    
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:gravity="center" >
+        
+     <TextView
+         android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/createanewexpense"
+        	android:textSize="20sp"
+        	android:textStyle="bold"
+        	android:text = "@string/addANewExpense"/>
+
+     <ImageButton
+         android:id="@+id/buttonCreateNewExpense"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:contentDescription="@string/createExpense"
+         android:src="@drawable/create" />
+    
+     </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:hint = "Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+ 
+        <requestFocus />
+    </EditText>
+ 
+    <Spinner
+        android:id="@+id/SpinnerDescription"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:hint="Category"
+        android:prompt="@string/category" />
+ 
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility = "gone" />
+    
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Date" />
+    
+    <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  
+</LinearLayout>

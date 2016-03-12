@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Manage My Money</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="signIN"> Sign IN </string>
+	<string name="signUP"> Register Here </string>
+	<string name = "createExpense" > Spent More Money? </string>
+	<string name = "createBill" > Add A New Bill</string>
+	<string name = "viewExpenseDetails">See your Expenses</string>
+	<string name = "viewBillDetails">See your Bills</string>
+	<string name = "totalMoneySpent"> TOTAL money SPent</string>
+	<string name = "category"> Select A Category </string>
+	<string name = "addANewExpense">Add this Expense </string>
+	<string name = "addANewBill">Add this Bill </string>
+	<string name= "deleteyouraccount">DELETE YOUR ACCOUNT</string>
+</resources>

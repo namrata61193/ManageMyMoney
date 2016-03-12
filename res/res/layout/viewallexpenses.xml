@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:gravity="center" >
+        
+     <TextView
+         android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/createanew"
+        	android:textSize="20sp"
+        	android:textStyle="bold"
+        	android:text = "@string/createExpense"/>
+
+     <ImageButton
+         android:id="@+id/buttonCreateExpense"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:contentDescription="@string/createExpense"
+         android:src="@drawable/create" />
+    
+     </RelativeLayout>
+     
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearchExpense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Expenses.."
+        android:inputType="textVisiblePassword"/>
+    
+    <ListView
+        android:id="@+id/listExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+    
+    
+    
+   
+ 
+</LinearLayout>

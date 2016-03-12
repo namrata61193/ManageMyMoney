@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.csfinalproject.MainActivity" >
+    
+     
+      <item android:id="@+id/viewexpenses"
+          android:icon="@drawable/expenses"
+          android:title="View Expenses"
+          android:showAsAction="always"/>
+      
+      <item android:id="@+id/viewbills"
+          android:icon="@drawable/bills"
+          android:title="View Bills"
+          android:showAsAction="always"/>
+      
+      <item android:id="@+id/overview"
+          android:icon="@drawable/overview"
+          android:title="Activity OverView"
+          android:showAsAction="ifRoom"/>
+      
+       <item android:id="@+id/logout"
+          android:icon="@drawable/logout"
+          android:title="Logout"
+          android:showAsAction="never"/>
+       
+       <item android:id="@+id/deleteAccount"
+      	  android:icon="@drawable/deleteaccount"
+          android:title="Delete Your Account"
+          android:showAsAction="never"/>
+
+</menu>

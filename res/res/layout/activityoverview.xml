@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+  	   android:id = "@+id/totalexpenseamount" />
+     
+     <Button
+        	android:id="@+id/viewExpenseDetais"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/viewExpenseDetails"
+        	android:layout_marginBottom="60dp" />
+     
+     <Button 
+         	android:id ="@+id/viewCalendarDetails"
+         	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Calendar view"
+        	android:layout_marginBottom="60dp" />
+     
+     
+     <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+  	   android:id = "@+id/totalbillamount" />
+     
+     
+     <Button
+        	android:id="@+id/viewBillDetais"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/viewBillDetails"
+        	android:layout_marginBottom="60dp" />
+    
+
+</LinearLayout>
